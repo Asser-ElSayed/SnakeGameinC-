@@ -1,1 +1,106 @@
 
+Project Requirements & Specifications
+(C++ Snake Game)
+
+
+1.Overview
+This document is made in purpose of documenting the required specifications and specific constraints for the development of a snake game using C++.
+
+1.1. Scope
+The scope of this project is made for a snake game which is designed to be based on a group of cells “Pattern” which represents an object either a snake or an apple and the main aim for the snake is to grow within the designated area “The Board” and avoiding the collision to one of those occupied cells by the snake itself.
+Boundaries:
+- Mainly designed as a console application using C++
+-Implementing the fundamental functions of the snake game
+
+1.2. References
+- IEEE/ANSI 830-1993 Requirements Specification Standard.
+-Software engineering Stack Exchange Snake Game Design
+
+
+
+
+
+2. General Description
+
+2.1 Product Perspective
+This game mainly aims to serve as a dedicated snake game console application with the standard and known rules for the game which is increasing the snake’s size by eating an apple and moving within the specified board for the snake without crashing. Moreover, it’s designed to end the game once the snake crashes into one or more occupied cells (Occupied cells means that the snake already occupies those cells), Moving forward there’ll be an apple item that will be spawning randomly within the scope of the board. 
+
+2.2 Product Function
+Product Control: User Got the access mainly through the console application to control over the snake directions (North, South, East, West) and for eating apples that appear randomly throughout the board.
+
+2.3 User Characteristics
+User: Main and primary role that we got for the game, got the simple needed access for all of the snake control.
+
+2.4 General Constraints
+-Organizational Constraints: This snake should be designed to move on a constant speed always. Moreover, snakes shouldn’t be shrinking under any conditions within the game. Mainly, score should be calculated based on the number of apples eaten.
+
+
+
+
+
+2.5 Assumptions and Dependencies
+Assumptions:
+-User got GCC17 compiler to run the console application.
+-User is running the console application on WindowsOS.
+Dependencies:
+-Standard C++ Libraries
+
+3.Specific Requirements
+
+3.1 Functional Requirements
+3.1.1 Game Initialization
+•	FR-1.1: The system shall initialize a game board with defined boundaries upon application start.
+•	FR-1.2: The system shall spawn a snake at a default starting position on the board.
+•	FR-1.3: The system shall spawn an initial apple at a random unoccupied position on the board.
+•	FR-1.4: The system shall initialize the score counter to zero at game start.
+3.1.2 Snake Movement
+•	FR-2.1: The system shall move the snake continuously at a constant speed.
+•	FR-2.2: The system shall accept user input to change snake within the allowed three directions.
+•	FR-2.3: The system shall prevent the snake from reversing direction (e.g., moving South when currently moving North).
+•	FR-2.4: The system shall update the snake's position on the board based on its current direction at each time interval.
+•	FR-2.5: The system shall maintain a list of all cells currently occupied by the snake body.
+3.1.3 Apple Management
+•	FR-3.1: The system shall detect when the snake's head position coincides with an apple's position.
+•	FR-3.2: The system shall remove the apple from the board when eaten by the snake.
+•	FR-3.3: The system shall spawn a new apple at a random unoccupied cell after the previous apple is eaten.
+•	FR-3.4: The system shall ensure apples only spawn on cells not occupied by the snake.
+3.1.4 Snake Growth
+•	FR-4.1: The system shall increase the snake's length by one cell when it eats an apple.
+•	FR-4.2: The system shall never decrease the snake's length during gameplay.
+•	FR-4.3: The system shall update the snake body representation to include the new cell.
+3.1.5 Collision Detection
+•	FR-5.1: The system shall detect collision when the snake's head moves to a cell occupied by its own body.
+•	FR-5.2: The system shall detect collision when the snake's head moves outside the board boundaries.
+•	FR-5.3: The system shall immediately trigger game termination upon any collision detection.
+3.1.6 Score Management
+•	FR-6.1: The system shall increment the score by one point each time the snake eats an apple.
+•	FR-6.2: The system shall display the current score to the user during gameplay.
+•	FR-6.3: The system shall display the final score when the game ends.
+3.1.7 Game State Management
+•	FR-7.1: The system shall maintain two game states: Running,  and Game Over.
+•	FR-7.2: The system shall transition to "Game Over" state when a collision is detected.
+•	FR-7.3: The system shall display a game over message when the game terminates.
+•	FR-7.4: The system shall provide an option to restart or exit the game after game over.
+3.1.8 Display/Rendering
+•	FR-8.1: The system shall render the game board in the console window.
+•	FR-8.2: The system shall display the snake using distinct character(s) or symbol(s).
+•	FR-8.3: The system shall display the apple using a distinct character or symbol.
+•	FR-8.4: The system shall display the board boundaries clearly.
+•	FR-8.5: The system shall refresh the console display at regular intervals to show updated game state.
+3.1.9 Input Handling
+•	FR-9.1: The system shall accept keyboard input for directional controls.
+•	FR-9.2: The system shall map specific keys to directions (e.g., W=North, S=South, A=West, D=East or Arrow keys).
+•	FR-9.3: The system shall process user input without pausing the game execution.
+•	FR-9.4: The system shall ignore invalid input during gameplay.
+3.1.10 Game Board Management
+•	FR-10.1: The system shall maintain a fixed-size rectangular game board.
+•	FR-10.2: The system shall track the occupancy status of each cell on the board.
+•	FR-10.3: The system shall prevent game objects from being placed outside board boundaries.
+
+3.2 Non-Functional Requirements
+
+3.2.1 Performance Requirements
+-Snake should grow instantly as he eats.
+-Snake movement should be rendered smoothly.
+
+

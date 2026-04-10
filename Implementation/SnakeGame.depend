@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1775832899 source:c:\fcaih\dgtec\c++\mock projects\snakegame\main.cpp
+	<Game.h>
+	<conio.h>
+
+1775832814 source:c:\fcaih\dgtec\c++\mock projects\snakegame\apple.cpp
+	"Apple.h"
+
+1775832814 c:\fcaih\dgtec\c++\mock projects\snakegame\apple.h
+	"Point.h"
+
+1775833056 c:\fcaih\dgtec\c++\mock projects\snakegame\point.h
+	"Common.h"
+
+1775832143 c:\fcaih\dgtec\c++\mock projects\snakegame\common.h
+
+1775831770 source:c:\fcaih\dgtec\c++\mock projects\snakegame\board.cpp
+	"Board.h"
+	<cstdlib>
+	<ctime>
+
+1775833049 c:\fcaih\dgtec\c++\mock projects\snakegame\board.h
+	<vector>
+	"Point.h"
+	"Common.h"
+
+1775831985 source:c:\fcaih\dgtec\c++\mock projects\snakegame\point.cpp
+	"Point.h"
+
+1775831817 source:c:\fcaih\dgtec\c++\mock projects\snakegame\render.cpp
+	"Render.h"
+	<iostream>
+	<windows.h>
+
+1775833057 c:\fcaih\dgtec\c++\mock projects\snakegame\render.h
+	"Snake.h"
+	"Apple.h"
+	"Common.h"
+
+1775832328 c:\fcaih\dgtec\c++\mock projects\snakegame\snake.h
+	<vector>
+	"Point.h"
+	"Common.h"
+
+1775832353 source:c:\fcaih\dgtec\c++\mock projects\snakegame\snake.cpp
+	"Snake.h"
+
+1775831874 source:c:\fcaih\dgtec\c++\mock projects\snakegame\inputhandler.cpp
+	"InputHandler.h"
+	<conio.h>
+
+1775833054 c:\fcaih\dgtec\c++\mock projects\snakegame\inputhandler.h
+	<map>
+	"Common.h"
+
+1775832462 source:c:\fcaih\dgtec\c++\mock projects\snakegame\game.cpp
+	"Game.h"
+	<windows.h>
+	<conio.h>
+
+1775833053 c:\fcaih\dgtec\c++\mock projects\snakegame\game.h
+	"Snake.h"
+	"Apple.h"
+	"Board.h"
+	"Render.h"
+	"InputHandler.h"
+	"Common.h"
+

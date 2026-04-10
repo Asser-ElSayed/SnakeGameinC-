@@ -1,2 +1,1 @@
-# SnakeGameinC-
-Mainly a Snake game made using fundemental concepts of C++ and with respect to both OOP and SOLID patterns
+This game mainly aims to serve as a dedicated snake game console application with the standard and known rules for the game which is increasing the snake’s size by eating an apple and moving within the specified board for the snake without crashing. Moreover, it’s designed to end the game once the snake crashes into one or more occupied cells (Occupied cells means that the snake already occupies those cells), Moving forward there’ll be an apple item that will be spawning randomly within the scope of the board. 
